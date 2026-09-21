@@ -28,3 +28,8 @@ student-tools/
 
 Xem hướng dẫn sử dụng chi tiết tại [docs/usage.md](docs/usage.md).
 ```
+
+```
+## Features
+- Calculator
+- Unit converter
