@@ -17,6 +17,12 @@ def multiply(a, b):
 
 
 def divide(a, b):
+    validate_number(a)
+    validate_number(b)
+
+    if b == 0:
+        raise ValueError("Cannot divide by zero.")
+
     return a / b
 
 
