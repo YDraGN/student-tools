@@ -27,8 +27,10 @@ student-tools/
   - `fahrenheit_to_celsius(fahrenheit)`
 
 Xem hướng dẫn sử dụng chi tiết tại [docs/usage.md](docs/usage.md).
+```
 
+```
 ## Features
-
 - Calculator
+- Unit converter
 - Temperature converter
