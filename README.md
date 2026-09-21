@@ -1,6 +1,7 @@
 # LAB 03: student-tools
 
 ##Structure:
+```
 student-tools/
 │
 ├── README.md
@@ -18,3 +19,4 @@ student-tools/
 │
 └── docs/
     └── usage.md
+```
