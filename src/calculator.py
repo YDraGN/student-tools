@@ -27,4 +27,7 @@ def validate_number(value):
     if not isinstance(value, (int, float)):
         raise ValueError("Input must be a number")
 
+    if value < 0:
+        raise ValueError("Negative numbers are not allowed") 
+    
     return True
