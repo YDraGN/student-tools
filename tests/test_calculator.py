@@ -30,6 +30,20 @@ def test_divide_by_zero():
         divide(10, 0)
 
 
+@pytest.mark.parametrize("operation", [add, subtract, multiply, divide])
+@pytest.mark.parametrize("invalid_value", ["abc", None, True])
+def test_calculation_rejects_invalid_first_input(operation, invalid_value):
+    with pytest.raises(ValueError, match="Input must be a number"):
+        operation(invalid_value, 2)
+
+
+@pytest.mark.parametrize("operation", [add, subtract, multiply, divide])
+@pytest.mark.parametrize("invalid_value", ["abc", None, True])
+def test_calculation_rejects_invalid_second_input(operation, invalid_value):
+    with pytest.raises(ValueError, match="Input must be a number"):
+        operation(2, invalid_value)
+
+
 def test_validate_integer():
     assert validate_number(10) is True
 
