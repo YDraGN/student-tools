@@ -60,3 +60,26 @@ def test_validate_string():
 def test_validate_none():
     with pytest.raises(ValueError, match="Input must be a number"):
         validate_number(None)
+
+
+def test_validate_negative_integer():
+    assert validate_number(-10) is True
+
+
+def test_add_negative_numbers():
+    assert add(-5, 3) == -2
+    assert add(-5, -3) == -8
+
+
+def test_subtract_negative_numbers():
+    assert subtract(-5, -3) == -2
+
+
+def test_multiply_negative_numbers():
+    assert multiply(-4, 3) == -12
+    assert multiply(-4, -3) == 12
+
+
+def test_divide_negative_numbers():
+    assert divide(-10, 2) == -5
+    assert divide(-10, -2) == 5
