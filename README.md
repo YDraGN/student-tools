@@ -1,6 +1,6 @@
 # LAB 03: student-tools
 
-##Structure:
+## Structure
 ```
 student-tools/
 │
@@ -20,3 +20,11 @@ student-tools/
 └── docs/
     └── usage.md
 ```
+## Tính năng
+
+- **Temperature Converter**: Chuyển đổi nhiệt độ giữa Celsius và Fahrenheit.
+  - `celsius_to_fahrenheit(celsius)`
+  - `fahrenheit_to_celsius(fahrenheit)`
+
+Xem hướng dẫn sử dụng chi tiết tại [docs/usage.md](docs/usage.md).
+`````
