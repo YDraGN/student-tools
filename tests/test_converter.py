@@ -1,4 +1,4 @@
-from converter import celsius_to_fahrenheit
+from src.converter import celsius_to_fahrenheit
 
 
 def test_celsius_to_fahrenheit():
