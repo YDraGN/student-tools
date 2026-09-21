@@ -35,3 +35,9 @@ from src.converter import fahrenheit_to_celsius
 print(fahrenheit_to_celsius(32))   # 0.0
 print(fahrenheit_to_celsius(212))  # 100.0
 ```
+
+## Validator
+
+Module `validator.py` cung cấp hàm `validate_number(value)` để kiểm tra
+đầu vào có phải là số hợp lệ (int/float) hay không. Ném ra `ValueError`
+nếu input là chuỗi, None, hoặc boolean.
